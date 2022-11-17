@@ -19,6 +19,9 @@ Route::get('/', function () {
 });
 
 Route::get('/user',[UserController::class,'index']);
+Route::post('/upload', function(){
+    dd('sdf');
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
